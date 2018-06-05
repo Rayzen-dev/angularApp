@@ -1,0 +1,43 @@
+.heroes {
+    list-style: none;
+    padding: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+
+    justify-content: center;
+}
+
+li {
+    background: #58C9B9;
+    border: 1px solid #548687;
+    color: #548687;
+    padding: 1em;
+    margin: .25em .5em;
+    width: 200px;
+    text-align: center;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+}
+
+li:hover {
+    -webkit-box-shadow: 0 2px 5px rgba(0,0,0, .25);
+    -moz-box-shadow: 0 2px 5px rgba(0,0,0, .25);
+    box-shadow: 0 2px 5px rgba(0,0,0, .25);
+}
+
+li.active {
+    background: #77AF9C;
+}
