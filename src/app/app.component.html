@@ -1,7 +1,11 @@
+<nav>
+    <ul class="flex center">
+        <li><a routerLink="/heroes">Heroes</a></li>
+        <li><a routerLink="/dashboard">Dashboard</a></li>
+    </ul>
+</nav>
 <h1>{{ title }}</h1>
-<hr />
-
 <div class="container">
-    <app-heroes></app-heroes>
+    <router-outlet></router-outlet>
     <app-messages></app-messages>
 </div>

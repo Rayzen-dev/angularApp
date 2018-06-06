@@ -1,3 +1,24 @@
+a {
+    text-decoration: none;
+}
+
+nav {
+    background: #1c94c4;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav a {
+    padding: .75em .5em;
+    display: block;
+    text-transform: uppercase;
+    color: #fdfdfd;
+}
+
 h1 {
     text-align: center;
 }
@@ -5,4 +26,23 @@ h1 {
 .container {
     width: 80%;
     margin: 2.5em auto;
+}
+
+.flex {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.flex.center {
+    justify-content: center;
 }
